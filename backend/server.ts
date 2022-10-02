@@ -1,7 +1,6 @@
 import { opine, serveStatic, json } from 'https://deno.land/x/opine@2.3.3/mod.ts';
 import { opineCors } from 'https://deno.land/x/cors/mod.ts';
 import { PersistenceService } from './persistence-service.ts';
-import { GameProposalOrganizer } from './game-proposal-organizer.ts';
 
 
 const app = opine();
@@ -17,23 +16,6 @@ app.get('/', function (req, res) {
 	console.log(`serving index html from ${PersistenceService.pathToIndexHTML}`);
 	res.sendFile(`${PersistenceService.pathToIndexHTML}/index.html`);
 });
-
-app.get('/api/v1/getgameproposals', async function (req, res) {
-	res.send(await PersistenceService.readGameProposals());
-})
-
-app.post('/api/v1/addgameproposal', async function (req, res) {
-	await GameProposalOrganizer.addGameProposal(req.body)
-	res.status(200).send("thank you")
-})
-
-app.post('/api/v1/addvoteongameproposal', async function (req, res) {
-	console.log(`received the following vote on gameproposal ${JSON.stringify(req.body)}`);
-	
-	await GameProposalOrganizer.addVoteOnGameProposal(req.body)
-	res.status(200).send("thank you")
-})
-
 
 if (Deno.args[0] === undefined) {
 	console.log("please specify a port by giving a parameter like 3000")
@@ -76,4 +58,3 @@ if (Deno.args[0] === undefined) {
 
 }
 
-void GameProposalOrganizer.ensureSystemConsistency()
