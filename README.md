@@ -19,6 +19,10 @@ I deployed this via github pages so that I do not need a dedicated own backend f
 Please contribute via [pull request](https://www.youtube.com/watch?v=8lGpZkjnkt4). 
 
 ## Learnings & Remarks Along This Journey
+This journey reminded me of how to leverage github pages in detail: 
+![Screenshot 2022-10-04 at 20 36 24](https://user-images.githubusercontent.com/43786652/193898754-4e9c747e-34dd-47a1-a9dd-fe62a50f9646.png)
+
+185.199.108.153, ... 
 
 
 ## Act of Revolt Proposal
