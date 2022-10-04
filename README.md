@@ -1,6 +1,6 @@
 # CULT Video Conferencing Microservice
 
-CULT Video Conferencing - aka [onlycultfans.org](onlycultfans.org) (under construction) - gives you the chance to communicate with each other. 
+CULT Video Conferencing - aka [onlycultfans.org](onlycultfans.org) - gives you the chance to communicate with each other. 
 
 It might allow for 24/7 "consultation-hour" live streams in which some of our CULT playmates answer questions around decentralization, self hosted wallets, deflationary currencies like CULT & RVLT etc. 
 
@@ -9,37 +9,14 @@ In order to strengthen resilience, scalability, composability and technological 
 Everyone is invited to foster the emergence of manifold architectures of freedom by contributing to this repository.
 
 
-## Status
-First Drafts & Idea Collection
-
 ## Frontend
-When it comes to state of the art web programming frameworks [Svelte](https://svelte.dev) is the framework [of choice](https://www.youtube.com/watch?v=rv3Yq-B8qp4) imo.    
-The two main reasons for that choice - comparing svelte to angular, vue and react - are performance and simplicity.   
-You might continuously improve the performance of this page utilizing [pagespeed.web.dev](https://pagespeed.web.dev/).   
-To speed up programming while ensuring beauty we utilize the [UI Kit Attractions](https://illright.github.io/attractions/?ref=madewithsvelte.com) - see also [intro](https://www.youtube.com/watch?v=RkD88ARvucM&t=492s).
-
-If you use VS Code as IDE you might want to install the extension named "svelte for vs code".  
-
+See docs folder. The programming effort was relatively low. 
 ## Backend
-When it comes to off-chain backends [Deno](https://deno.land) is the runtime environment of choice imo.    
-Deno can be perceived as the successor of NodeJS imo.  
-You might check the [Deno Main Repo](https://github.com/denoland/deno) and join the [Deno Community](https://discord.com/invite/deno).
-
-### Start Locally
-To start the backend server locally you might execute:  
-
-```sh
-deno run --allow-read --allow-net --allow-write --allow-env backend/server.ts 8042
-```
-
-### Start in Production
-```sh
-pm2 start backend/server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-write --allow-env --allow-net" -- 443
-```
+I deployed this via github pages so that I do not need a dedicated own backend for this feature. I wonder if the implementation of [these ideas](https://github.com/cultfamily-on-github/cult-video-conferencing-microservice/issues/2) would be valuable. Feedback is welcome
 
 
 ## Contribute
-Please contribute via pull request. 
+Please contribute via [pull request](https://www.youtube.com/watch?v=8lGpZkjnkt4). 
 
 ## Learnings & Remarks Along This Journey
 
@@ -48,21 +25,26 @@ Please contribute via pull request.
 
 
 ### Name
-
+I programmed https://onlycultfans.org 
 
 ### Handle
 https://twitter.com/Peer2peerE
 
 ### Description
-Let us be together in playful creativity to free the world.  
-Everyone is invited to support the emergence of manifold architectures of freedom by contributing to the code which can be found here: https://github.com/cultfamily-on-github/cult-education-games-microservice ...
-I added the cycle keyword in some commitmessages - see evidencelink.
+I programmed https://onlycultfans.org and also already integrated it in the CULT mag. See also: https://cultmagazine.org/#onlycultfans.
+
+A detailed description can be found here: https://github.com/cultfamily-on-github/cult-video-conferencing-microservice/blob/main/README.md.
+
+Everyone is invited to support the emergence of manifold architectures of freedom by contributing to the code which can be found here: https://github.com/cultfamily-on-github/cult-video-conferencing-microservice 
+
+You might also check the commit history if you want to go into those details: https://github.com/cultfamily-on-github/cult-video-conferencing-microservice/commits/main
+
 
 ### Evidence Link
-
+https://onlycultfans.org
 
 ### Worth
-
+0.25
 ### Wallet
 0x9E972a43B3B8D68cD70930697E16429E47E88151
 
