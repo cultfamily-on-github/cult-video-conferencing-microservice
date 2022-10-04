@@ -5,8 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://meet.jit.si/external_api.js"></script>
     <script>
-        const optimalWidth = window.screen.availWidth - (window.screen.availWidth * 0.1)
-        const optimalHeight = window.screen.availHeight - (window.screen.availHeight * 0.1)
+        const optimalWidth = window.screen.availWidth - (window.screen.availWidth * 0.4)
+        const optimalHeight = window.screen.availHeight - (window.screen.availHeight * 0.4)
 
         $(document).ready(function () {
             var domain = "meet.jit.si";
@@ -46,10 +46,19 @@
     a {
         color: white
     }
+
+    .donation {
+        margin-bottom: 3vh;
+    }
+    
+    .videocontainer {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
 </style>
 
 <body>
-    <div id="meet" class="text-center videocontainer">
+    <div class="text-center">
         <h1>Only CULT Fans</h1>
         <p></p>
         Collaboration, mutual education and sexy playmates seem to be a valuable ingredient to speed up the success of our
@@ -63,7 +72,15 @@
         </a> and embed it in the
         <a href="https://cultmagazine.org" target="_blank">
             cultmagazine.org</a>.
-        <p><br></p>
+    </div>
+
+    <div id="meet" class="videocontainer text-center">
+        
+    </div>
+
+    <div class="donation text-center">
+        If you like what you see, you might consider donating a CULT or RVLT reward to: <br>
+        0x9E972a43B3B8D68cD70930697E16429E47E88151
     </div>
 
     <div>
